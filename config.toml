@@ -1,0 +1,67 @@
+baseURL = "https://007ba7.us"
+languageCode = "en-us"
+title = "Cerulean"
+theme="phantom"
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "css/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "css/themefisher-fonts.min.css"
+  [[params.plugins.css]]
+  URL = "css/owl.carousel.min.css"
+
+    # JS Plugins
+  [[params.plugins.js]]
+  URL = "js/vendor/jquery-2.2.4.min.js"
+  [[params.plugins.js]]
+  URL = "js/vendor/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "js/isotope.pkgd.min.js"
+  [[params.plugins.js]]
+  URL = "js/jquery.nicescroll.min.js"
+  [[params.plugins.js]]
+  URL = "js/owl.carousel.min.js"
+  [[params.plugins.js]]
+  URL = "js/jquery-validation.min.js"
+  [[params.plugins.js]]
+  URL = "js/form.min.js"
+  [[params.plugins.js]]
+  URL = "js/jquery.easing.min.js"
+  
+  [params]
+# dark mode
+dark = true
+logo = "img/cerulean.png"
+#shortDescription = "Welcome to Cerulean"
+#bgImage = "img/banner.jpg"
+# Meta data
+description = "This is meta description"
+author = "Themefisher"
+# Google Analitycs
+#googleAnalitycsID = "Your ID"
+# copyright text
+#copyright = "Phantom, All Rights Reserved."
+
+  # Preloader
+  [params.preloader]
+  enable = false
+
+  # Menu
+  [[params.menu]]
+  title = "blog"
+  icon = "tf-ion-ios-paper"
+  URL = "/blog"
+
+  [[params.menu]]
+  title = "projects"
+  icon = "tf-tools"
+  URL = "/service"
+  
+  [[params.menu]]
+  title = "Contact"
+  icon = "tf-envelope2"
+  URL = "/contact"
