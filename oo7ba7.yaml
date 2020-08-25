@@ -27,9 +27,6 @@ spec:
                 memory: 1000Mi
           ports:
             - containerPort: 1313
-          envFrom:
-          - configMapRef:
-              name: hugo-app
           imagePullPolicy: Always
 ---
 apiVersion: v1
