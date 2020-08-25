@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hugo-app
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hugo-app
+  namespace: hugo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hugo-app
+  template:
+    metadata:
+      labels:
+        app: hugo-app
+    spec:
+      containers:
+        - name: app
+          image: 10.10.100.14:5000/hugo-app:1.0
+          resources:
+              requests:
+                cpu: 1
+                memory: 1000Mi
+          ports:
+            - containerPort: 1313
+          envFrom:
+          - configMapRef:
+              name: hugo-app
+          imagePullPolicy: Always
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hugo-app
+  namespace: hugo-app
+spec:
+  selector:
+    app: hugo-app
+  ports:
+    - port: 80
+      targetPort: 1313
+  type: LoadBalancer
