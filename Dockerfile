@@ -27,4 +27,4 @@ RUN hugo -s ${REPO_NAME} -d /usr/share/nginx/html/
 
 CMD nginx -g "daemon off;"
 
-EXPOSE 1313
+EXPOSE 80

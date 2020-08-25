@@ -20,13 +20,13 @@ spec:
     spec:
       containers:
         - name: app
-          image: 10.10.100.14:5000/hugo-app:1.1
+          image: 10.10.100.14:5000/hugo-app:1.2
           resources:
               requests:
                 cpu: 1
                 memory: 1000Mi
           ports:
-            - containerPort: 1313
+            - containerPort: 80
           imagePullPolicy: Always
 ---
 apiVersion: v1
@@ -39,5 +39,5 @@ spec:
     app: hugo-app
   ports:
     - port: 80
-      targetPort: 1313
+      targetPort: 80
   type: LoadBalancer
