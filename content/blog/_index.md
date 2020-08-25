@@ -1,11 +1,10 @@
 ---
-title: "Blog"
-date: 2020-08-24T15:21:02-05:00
-description : "my contact file"
+title: "Latest News"
+description: "this is meta description"
+draft: false
+bg_image: "images/featue-bg.jpg"
 firstName : "Jeff"
 lastName : "Fogarty"
-shortDescription : "my Blog"
+shortDescription : "Know about my blog"
 weight : 1
 ---
-
-This is a test

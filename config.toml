@@ -31,20 +31,20 @@ theme="phantom"
   URL = "js/form.min.js"
   [[params.plugins.js]]
   URL = "js/jquery.easing.min.js"
-  
-  [params]
-# dark mode
-dark = true
-logo = "img/cerulean.png"
-#shortDescription = "Welcome to Cerulean"
-#bgImage = "img/banner.jpg"
-# Meta data
-description = "This is meta description"
-author = "Themefisher"
-# Google Analitycs
-#googleAnalitycsID = "Your ID"
-# copyright text
-#copyright = "Phantom, All Rights Reserved."
+
+	[params]
+	# dark mode
+	dark = false
+	logo = "img/cerulean.png"
+	#shortDescription = "Welcome to Cerulean"
+	#bgImage = "img/banner.jpg"
+	# Meta data
+	description = "This is meta description"
+	author = "Themefisher"
+	# Google Analitycs
+	#googleAnalitycsID = "Your ID"
+	# copyright text
+	#copyright = "Phantom, All Rights Reserved."
 
   # Preloader
   [params.preloader]
@@ -54,14 +54,14 @@ author = "Themefisher"
   [[params.menu]]
   title = "blog"
   icon = "tf-ion-ios-paper"
-  URL = "/blog"
+  URL = "/blog/"
 
   [[params.menu]]
   title = "projects"
   icon = "tf-tools"
-  URL = "/service"
-  
+  URL = "/service/"
+
   [[params.menu]]
   title = "Contact"
   icon = "tf-envelope2"
-  URL = "/contact"
+  URL = "/contact/"
