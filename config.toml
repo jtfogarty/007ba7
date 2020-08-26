@@ -34,7 +34,7 @@ theme="phantom"
   
   [params]
 # dark mode
-dark = true
+dark = false
 logo = "img/cerulean.png"
 #shortDescription = "Welcome to Cerulean"
 #bgImage = "img/banner.jpg"
