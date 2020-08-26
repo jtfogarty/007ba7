@@ -13,7 +13,7 @@
 }
 
 .hexagon-menu {
-    
+
 }
 
 /* End of container */
@@ -161,4 +161,17 @@
     }
 }
 
+.post-list {
+	list-style: none;
 
+	li span {
+		display: inline-block;
+		width: 20rem;
+		text-align: right;
+		margin-right: 3rem;
+	}
+
+	.font-weight-bold {
+		font-weight: 700 !important;
+	}
+}
