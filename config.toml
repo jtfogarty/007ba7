@@ -1,67 +1,152 @@
-baseURL = "https://007ba7.us"
-languageCode = "en-us"
+######################## default configuration ####################
+baseURL = "http://localhost"
 title = "Cerulean"
-theme="phantom"
+theme = "godocs"
+# disable language
+disableLanguages = [true] # desable language from here
 
-# Plugins
-[params.plugins]
+# hugo outputs
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
 
-  # CSS Plugins
-  [[params.plugins.css]]
-  URL = "css/bootstrap.min.css"
-  [[params.plugins.css]]
-  URL = "css/themefisher-fonts.min.css"
-  [[params.plugins.css]]
-  URL = "css/owl.carousel.min.css"
+# render unsafe html
+[markup.goldmark.renderer]
+unsafe = true
 
-    # JS Plugins
-  [[params.plugins.js]]
-  URL = "js/vendor/jquery-2.2.4.min.js"
-  [[params.plugins.js]]
-  URL = "js/vendor/bootstrap.min.js"
-  [[params.plugins.js]]
-  URL = "js/isotope.pkgd.min.js"
-  [[params.plugins.js]]
-  URL = "js/jquery.nicescroll.min.js"
-  [[params.plugins.js]]
-  URL = "js/owl.carousel.min.js"
-  [[params.plugins.js]]
-  URL = "js/jquery-validation.min.js"
-  [[params.plugins.js]]
-  URL = "js/form.min.js"
-  [[params.plugins.js]]
-  URL = "js/jquery.easing.min.js"
-  
-  [params]
-# dark mode
-dark = false
+############################# Plugins ##############################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themify-icons/themify-icons.css"
+[[params.plugins.css]]
+link = "plugins/search/auto-complete.css"
+[[params.plugins.css]]
+link = "plugins/featherlight/featherlight.min.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/masonry/masonry.min.js"
+[[params.plugins.js]]
+link = "plugins/featherlight/featherlight.min.js"
+[[params.plugins.js]]
+link = "plugins/clipboard/clipboard.min.js"
+[[params.plugins.js]]
+link = "plugins/search/auto-complete.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+[[params.plugins.js]]
+link = "plugins/search/lunr.min.js"
+
+
+############################## navigation ###############################
+
+# main menu
+[[menu.main]]
+name = "Faq"
+url = "faq"
+weight = 1
+
+
+
+
+[[menu.footer]]
+name = "contact"
+url = "contact"
+weight = 2
+
+[[menu.footer]]
+name = "faq"
+url = "faq"
+weight = 3
+
+
+#################### default parameters ################################
+[params]
 logo = "img/cerulean.png"
-#shortDescription = "Welcome to Cerulean"
-#bgImage = "img/banner.jpg"
 # Meta data
 description = "This is meta description"
 author = "Themefisher"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
 # Google Analitycs
-#googleAnalitycsID = "Your ID"
-# copyright text
-#copyright = "Phantom, All Rights Reserved."
+google_analitycs_id = "" # your id
 
-  # Preloader
-  [params.preloader]
-  enable = false
+# Preloader
+[params.preloader]
+enable = true
+preloader = "" # use jpg, png, svg or gif format.
 
-  # Menu
-  [[params.menu]]
-  title = "blog"
-  icon = "tf-ion-ios-paper"
-  URL = "/blog"
+# Navigation button solid
+[params.navigation_button_solid]
+enable = true
+label = "contact"
+link = "contact"
 
-  [[params.menu]]
-  title = "projects"
-  icon = "tf-tools"
-  URL = "/service"
   
-  [[params.menu]]
-  title = "Contact"
-  icon = "tf-envelope2"
-  URL = "/contact"
+############################# social site ########################
+[[params.social]]
+title = "twitter"
+icon = "ti-twitter-alt" 
+link = "https://twitter.com/jtfogarty"
+
+[[params.social]]
+title = "github"
+icon = "ti-github"
+link = "https://github.com/jtfogarty/"
+
+[[params.social]]
+title = "linkedin"
+icon = "ti-linkedin" 
+link = "https://www.linkedin.com/in/jtfogarty/"
+
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+weight = 1
+home = "Home"
+# copyright
+#copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"
+
+# call to action
+[Languages.en.call_to_action]
+enable = false
+title = "Have an idea for a blog post?"
+#image = "img/cerulean.png"
+content = "I'm interest to hear your ideas for a post"
+
+  # call to action button
+  [Languages.en.call_to_action.button]
+  enable = "true"
+  label = "Submit an idea"
+  link = "contact"
+
+
+################################### French language #####################################
+[Languages.fr]
+languageName = "Fr"
+languageCode = "fr-fr"
+weight = 2
+home = "Accueil"
+# copyright
+#copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"
+
+# call to action
+[Languages.fr.call_to_action]
+enable = true
+title = "Still Didn't Find Your Answer?"
+image = "images/cta-illustration.jpg"
+content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+
+  # call to action button
+  [Languages.fr.call_to_action.button]
+  enable = "true"
+  label = "Submit a ticket"
+  link = "contact"
