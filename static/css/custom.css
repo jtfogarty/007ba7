@@ -1,0 +1,21 @@
+.navbar-brand {
+	color: #007ba7 !important;
+	font: bold 36px 'Montserrat', sans-serif;
+}
+
+footer .navbar-brand {
+	display: none !important;
+}
+
+#navigation, .pagination {
+	display: none !important;
+}
+
+.search-wrapper {
+	flex-grow: 1;
+	padding-left: 25%;
+}
+
+.search-wrapper input {
+	width: 100% !important;
+}

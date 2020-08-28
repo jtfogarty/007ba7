@@ -24,6 +24,8 @@ link = "plugins/themify-icons/themify-icons.css"
 link = "plugins/search/auto-complete.css"
 [[params.plugins.css]]
 link = "plugins/featherlight/featherlight.min.css"
+[[params.plugins.css]]
+link = "css/custom.css"
 
 # JS Plugins
 [[params.plugins.js]]
@@ -68,7 +70,7 @@ weight = 3
 
 #################### default parameters ################################
 [params]
-logo = "img/cerulean.png"
+# logo = "img/cerulean.png"
 # Meta data
 description = "This is meta description"
 author = "Themefisher"
