@@ -5,4 +5,4 @@ description: "Cerulean meta description"
 ---
 
 
-Welcome. This site contains things that entertain me from a techonolgy perspective.
+Welcome. This site contains things that entertain me from a technology perspective.
