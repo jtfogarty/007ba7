@@ -33,6 +33,6 @@ I've created an Amazon [list](https://www.amazon.com/hz/wishlist/ls/1WAP5034L6ZQ
 
 On the left of the table is a [SimplyNUC server shelf](https://simplynuc.com/3u-nuc-server-shelf/) with 3 NUCs, Power Supply and an unmanaged switch.
 I also have [2 Gigabyte GB-BLCE-4105](https://www.amazon.com/gp/product/B07DMM7Z7N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) 
-The Power Supply feed the 3 NUCs and the 2 Gigabytes.
+The Power Supply feeds the 3 NUCs and the 2 Gigabytes.
 
 
