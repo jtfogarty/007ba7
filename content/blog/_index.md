@@ -5,4 +5,5 @@ author: Jeff Fogarty
 description: "this is blog meta description"
 draft: false
 type: "blog"
+weight: 1
 ---

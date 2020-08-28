@@ -2,11 +2,10 @@
 title: "Overview"
 date: 2020-07-24T11:07:10+06:00
 author: Jeff Fogarty
-image : "static/cerulean.png"
-bg_image: "img/featue-bg.jpg"
 description: "this is meta description"
 draft: false
 type: "post"
+weight: 1
 ---
 
 ![image](../../img/lab/IMG_5758.jpg?width=500px)
@@ -35,4 +34,10 @@ On the left of the table is a [SimplyNUC server shelf](https://simplynuc.com/3u-
 I also have [2 Gigabyte GB-BLCE-4105](https://www.amazon.com/gp/product/B07DMM7Z7N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) 
 The Power Supply feeds the 3 NUCs and the 2 Gigabytes.
 
+The Black box with all the lights is a gaming machine I bought.  Probably should have made a differnt choice. The specs are below;
+- AMD Ryzen 7 3800X 8-Core Processor with 16 cores
+- 32GB of RAM
+- 1TB nvme for the OS
+- 2TB nvme for whatever
+- NVIDIA RTX 2060 GPU
 
