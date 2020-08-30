@@ -7,3 +7,6 @@ draft: false
 type: "lab"
 weight: 3
 ---
+
+
+ - [Hayden James'](https://hydn.dev/homelab/) wirite-up was the main source of insparation 

@@ -5,7 +5,8 @@ draft: false
 ---
 
 {{< faq "Why Cerulean?" >}}
-Being a recovering [Xfiles](https://en.wikipedia.org/wiki/The_X-Files) fan, Cerulean Blue stuck with me since [Season 3 Episode 17](https://en.wikipedia.org/wiki/Pusher_(The_X-Files)). 
+Being a recovering [Xfiles](https://en.wikipedia.org/wiki/The_X-Files) fan, Cerulean Blue stuck with me since [Season 3 Episode 17](https://en.wikipedia.org/wiki/Pusher_(The_X-Files)). <p>
+007ba7 is the hexidecimal value for Cerulean.
 {{</ faq >}}
 
 {{< faq "Who are you?" >}}
