@@ -34,7 +34,7 @@ On the left of the table is a [SimplyNUC server shelf](https://simplynuc.com/3u-
 I also have [2 Gigabyte GB-BLCE-4105](https://www.amazon.com/gp/product/B07DMM7Z7N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) 
 The Power Supply feeds the 3 NUCs and the 2 Gigabytes.
 
-The Black box with all the lights is a gaming machine I bought.  Probably should have made a differnt choice. The specs are below;
+The Black box with all the lights is a gaming machine I bought.  Probably should have made a different choice. The specs are below;
 - AMD Ryzen 7 3800X 8-Core Processor with 16 cores
 - 32GB of RAM
 - 1TB nvme for the OS
