@@ -20,6 +20,8 @@ Now we can configure HAProxy.
 #### Basic Configuration
 In pfSense go to Services | HAProxy. The HAProxy page will display.  The first thing to do is to set the Max SSL Diffie-Hellman size to 2048 under the Tuning section.  
 
+![image](../../img/lab/haproxy/tuning.png)
+
 #### Backend
 select Backend and select Add. In this example we are setting up the frontend and backend HAProxy for a blog running at blog.mydomain.com.  As Mr. Karlton states below, coming up with names is hard.  What makes sense in one context does not in another.  Let's just name this backen `blog` and see how this works out.
 

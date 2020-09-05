@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: 10.10.100.14:5000/hugo-app:1.10
+          image: 10.10.100.14:5000/hugo-app:1.13
           resources:
               requests:
                 cpu: 1
