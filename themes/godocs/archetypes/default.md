@@ -1,7 +1,8 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
-# description
+author: Jeff Fogarty
+draft: false
 description: "This is meta description"
+type: "howto"
 ---

@@ -2,7 +2,8 @@
 title: "WTF"
 date: 2020-07-24T11:07:10+06:00
 author: Jeff Fogarty
-description: "this is lab meta description"
+tags: ["wtf", "home","lab"]
+description: "What is this for"
 draft: false
 type: "lab"
 weight: 2
