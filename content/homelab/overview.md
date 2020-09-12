@@ -8,6 +8,7 @@ draft: false
 type: "post"
 weight: 1
 ---
+<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-11 </div><p>
 
 ![image](../../img/lab/IMG_5758.jpg?width=500px)
 
@@ -31,7 +32,7 @@ Starting with the [wall rack](https://www.amazon.com/gp/product/B01M1OCOC7/ref=p
 
 I've created an Amazon [list](https://www.amazon.com/hz/wishlist/ls/1WAP5034L6ZQL?ref_=wl_share) for most of these items
 
-On the left of the table is a [SimplyNUC server shelf](https://simplynuc.com/3u-nuc-server-shelf/) with 3 NUCs, Power Supply and an unmanaged switch.
+On the left of the table is a [SimplyNUC server shelf](https://simplynuc.com/3u-nuc-server-shelf/) with [3 - NUC10i7FNH](https://simplynuc.com/10i7fnh-full/), Power Supply and an unmanaged switch.
 I also have [2 Gigabyte GB-BLCE-4105](https://www.amazon.com/gp/product/B07DMM7Z7N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) 
 The Power Supply feeds the 3 NUCs and the 2 Gigabytes.
 

@@ -7,6 +7,7 @@ description: "MetalLB / pfSense"
 type: "howto"
 weight: 3
 ---
+<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-04 </div><p>
 
 https://www.alexbarnes.page/post/2019-6-23-synology-storage-to-k8s/
 

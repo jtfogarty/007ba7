@@ -8,8 +8,9 @@ description: "HAProxy and pfSense"
 type: "howto"
 weight: 1
 ---
+<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-04 </div><p>
 
-The goal in this example is to be able to access an internally hosted site via `HTTPS` while the internal traffic is `HTTP`
+The goal in this example is to provide `HTTPS` for external traffic while the internal traffic is `HTTP`.
 
 #### Prereqs 
 - [X] [Install HAProxy in pfSence](https://docs.netgate.com/pfsense/en/latest/book/packages/managing-packages.html)

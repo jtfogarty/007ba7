@@ -19,3 +19,9 @@ footer .navbar-brand {
 .search-wrapper input {
 	width: 100% !important;
 }
+
+.shortcode-iframe{height: 405px; width: 70%}
+
+@media(min-width : 900px){
+.shortcode-iframe{height: 405px; width: 100%}
+}
