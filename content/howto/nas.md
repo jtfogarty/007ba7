@@ -2,7 +2,7 @@
 title: "QNAP TS-473 NAS setup for Kubernetes"
 date: 2020-09-05T08:17:58-05:00
 author: Jeff Fogarty
-draft: false
+draft: true
 description: "MetalLB / pfSense"
 type: "howto"
 weight: 3

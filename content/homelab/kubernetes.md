@@ -1,5 +1,5 @@
 ---
-title: "Kubernete Cluters"
+title: "Kubernete Clusters"
 date: 2020-07-24T11:07:10+06:00
 author: Jeff Fogarty
 tags: ["home", "lab","kubernetes"]
@@ -8,7 +8,7 @@ draft: false
 type: "post"
 weight: 2
 ---
-<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-11 </div><p>
+<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-12 </div><p>
 
 ### Development Cluster
 
