@@ -80,3 +80,4 @@ Looking at the FileStation interface for the QNAP, we can see the newly created 
 [Knowledia](https://news.knowledia.com/US/en/articles/deploying-dynamic-nfs-provisioning-in-kubernetes-exxact-5531d53d499daad4fb5844f863d25728b381a8cf)<br>
 [Dynamic NFS](https://blog.exxactcorp.com/deploying-dynamic-nfs-provisioning-in-kubernetes/)<br>
 [How to use the 'storageClass' attribute](https://itnext.io/kubernetes-tip-how-to-use-the-storageclass-attribute-75cf47e7c6b0)
+[Deploy dynamic NFS provisioning](https://www.gooksu.com/2020/06/kubernetes-101-102/)
