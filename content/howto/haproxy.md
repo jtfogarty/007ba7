@@ -24,7 +24,7 @@ In pfSense go to Services | HAProxy. The HAProxy page will display.  The first t
 ![image](../../img/lab/haproxy/tuning.png)
 
 #### Backend
-Select Backend and select Add. Now we are setting up the frontend and backend HAProxy for a blog running at blog.mydomain.com.  As Mr. Karlton states below, coming up with names is hard.  What makes sense in one context does not in another.  Let's just name this backen `blog` and see how this works out.
+Select Backend and select Add. Now we are setting up the frontend and backend HAProxy for a blog running at blog.mydomain.com.  As Mr. Karlton states below, coming up with names is hard.  What makes sense in one context does not in another.  Let's just name this backend `blog` and see how this works out.
 
 >There are only two hard things in Computer Science: cache invalidation and naming things.<p>
 >-- Phil Karlton

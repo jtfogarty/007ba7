@@ -6,7 +6,7 @@ tags: ["home lab", "jenkins-x","kubernetes"]
 draft: true
 description: "Jenkins-x in a Home Lab"
 type: "howto"
-weight: 4
+weight: 5
 ---
 <div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-16 </div><p>
 

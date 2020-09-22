@@ -1,5 +1,5 @@
 ---
-title: "Kubernete Clusters"
+title: "Kubernetes Clusters"
 date: 2020-07-24T11:07:10+06:00
 author: Jeff Fogarty
 tags: ["home", "lab","kubernetes"]
@@ -12,9 +12,9 @@ weight: 2
 
 ### Development Cluster
 
-The master node is a[Gigabyte GB-BSi5-6200](https://www.amazon.com/gp/product/B0196LP1LG/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)<br/>
+The master node is a [Gigabyte GB-BSi5-6200](https://www.amazon.com/gp/product/B0196LP1LG/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)<br/>
 Two of the worker nodes are [Gigabyte GB-BLCE-4105](https://www.amazon.com/gp/product/B07DMM7Z7N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)<br/>
-The thrid worker node is a former gaming rig with the below specs;
+The third worker node is a former gaming rig with the below specs;
 
   - AMD Ryzen 7 3800X 8-Core Processor with 16 cores
   - 32GB of RAM

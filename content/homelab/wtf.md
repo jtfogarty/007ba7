@@ -10,7 +10,7 @@ weight: 3
 ---
 <div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-04 </div><p> 
 
-What's This For?  I'm gald you asked.  
+What's This For?  I'm glad you asked.  
 
 The main purpose is for learning. There is no better teacher than doing. Running Kubernetes in the cloud is not cheap. Experimenting with DevOps, Chat-Opts or Git-Ops requires multiple k8s clusters to make it realistic .  
 Building this lab has the added benefit of allowing me to self-host some projects, including this site.  
