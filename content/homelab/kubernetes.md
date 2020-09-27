@@ -26,3 +26,5 @@ The third worker node is a former gaming rig with the below specs;
 
 The 2 master nodes are [Gigabyte GB-BLCE-4105](https://www.amazon.com/gp/product/B07DMM7Z7N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)<br/>
 The 3 worker are NUC10i7FNH with 10 Core i7-10710U, 16GB DDR4 Mem, 512GB SATA M.2 SSD, 2TB 2.5in HDD
+
+The QNAP NAS device will be shared between dev and prod.

@@ -8,9 +8,9 @@ draft: false
 type: "post"
 weight: 1
 ---
-<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-11 </div><p>
+<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-25 </div><p>
 
-![image](../../img/lab/IMG_5758.jpg?width=500px)
+![image](../../img/lab/IMG_5847.jpg?width=500px)
 
 Here is the current view.  
 
@@ -36,10 +36,16 @@ On the left of the table is a [SimplyNUC server shelf](https://simplynuc.com/3u-
 I also have [2 Gigabyte GB-BLCE-4105](https://www.amazon.com/gp/product/B07DMM7Z7N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) 
 The Power Supply feeds the 3 NUCs and the 2 Gigabytes.
 
-The Black box with all the lights is a gaming machine I bought.  Probably should have made a different choice. The specs are below;
+In between the SimplyNUC shelf an the monitor is a [QNAP TS-473-4G-US 4-Bay NAS](https://www.amazon.com/gp/product/B07BMYKYKJ/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1)
+
+I also have 'gaming' machine, not in this picture.  The specs are below;
 - AMD Ryzen 7 3800X 8-Core Processor with 16 cores
 - 32GB of RAM
 - 1TB nvme for the OS
 - 2TB nvme for whatever
 - NVIDIA RTX 2060 GPU
 
+There is stack of Raspberry Pi's sitting on top of the NAS.  I was hoping to install [POWERPANEL® BUSINESS 4](https://www.cyberpowersystems.com/products/software/power-panel-business/) on one of the Pi's but this OS is not supported. 
+I'll have to buy one more [Gigabyte GB-BLCE-4105](https://www.amazon.com/gp/product/B07DMM7Z7N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+
+The keyboad is a [Das Keyboard 4](https://www.amazon.com/stores/Das+Keyboard/page/DF548711-D8BE-4659-83AE-A5FAFF411E10?ref_=ast_bln)

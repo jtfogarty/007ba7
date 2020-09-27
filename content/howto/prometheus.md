@@ -1,5 +1,5 @@
 ---
-title: "Installing Prometheus and Kuberhealthy"
+title: "Install Prometheus and Kuberhealthy"
 date: 2020-09-16T11:11:11+06:00
 author: Jeff Fogarty
 tags: ["home lab", "prometheus","kubernetes","kuberhealthy"]

@@ -1,14 +1,14 @@
 ---
-title: "Configuring MetalLB/OpenBGPD with pfSense"
+title: "Configure MetalLB / OpenBGPD with pfSense"
 date: 2020-09-04T21:41:12-05:00
 author: Jeff Fogarty
 tags: ["metallb", "pfsense","kubernetes","openbgpd"]
-draft: true
+draft: false
 description: "MetalLB / OpenBGPD in pfSense"
 type: "howto"
 weight: 2
 ---
-<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-12 </div><p>
+<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-23 </div><p>
 
 MetalLB is a load-balancer for bare metal Kubernetes.  This example explains how to configure MetalLB, pfSense Virtual IP and the OpenBGPD package for pfSense.
 
@@ -19,6 +19,4 @@ MetalLB is a load-balancer for bare metal Kubernetes.  This example explains how
 ##### Create Virtual IPs in pfSense
 
 
-<div class="shortcode-iframe-wrapper">
-  <iframe class="shortcode-iframe" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTL3OF0J5wKDIPNu1kGaKrQ_buqKERxY9DwgK7btuG0iLwfie4GW6Cly4KUcfciCLzRZkgO4ykkrf-X/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-</div>
+> I need to collect my thoughts on this.  Give me a minute
