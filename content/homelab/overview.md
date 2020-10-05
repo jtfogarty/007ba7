@@ -10,7 +10,7 @@ weight: 1
 ---
 <div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-25 </div><p>
 
-![image](../../img/lab/IMG_5847.jpg?width=500px)
+![image](../../img/lab/gallery/IMG_5847.jpg?width=500px)
 
 Here is the current view.  
 

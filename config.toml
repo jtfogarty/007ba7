@@ -104,6 +104,11 @@ title = "linkedin"
 icon = "ti-linkedin" 
 link = "https://www.linkedin.com/in/jtfogarty/"
 
+#[[params.social]]
+#title = "docker"
+#icon = "ti-docker" 
+#link = "https://hub.docker.com/u/007ba7"
+
 
 ################################### English language #####################################
 [Languages.en]
