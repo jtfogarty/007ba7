@@ -49,8 +49,11 @@ After creating another PV and PVC, defined below;
 
 {{< gist jtfogarty 1725f639b806c3efb04be6ec18fc99c5 "lab6-pvc-a.yaml">}}
 
+PVC lab6-pv-claim-a is stuck in pending. 
 
- I'm seeing the below warning;
+{{< gist jtfogarty 1725f639b806c3efb04be6ec18fc99c5 "kubectl get pv,pvc-c">}}
+
+ I'm seeing the below warning when I do `kubectl describe pvc lab6-pv-claim-a`;
 
 ```
 Cannot bind to requested volume "lab6-pv-volume-a": storageClassName does not match
