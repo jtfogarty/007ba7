@@ -1,6 +1,6 @@
 {{ "<!-- details page -->" | safeHTML }}
 <section>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-lg-3 col-md-4 d-md-block">
         <ul class="sidenav pt-4 pr-4 border-right border-default">
@@ -105,7 +105,7 @@
 {{ if .Site.Params.call_to_action.enable }}
 {{ with .Site.Params.call_to_action }}
 <section class="section">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row align-items-center">
       <div class="col-lg-4 text-center d-lg-block d-none">
         <img src="{{ .image| absURL }}" class="img-fluid" alt="">
