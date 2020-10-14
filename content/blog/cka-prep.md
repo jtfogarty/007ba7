@@ -61,7 +61,7 @@ PVC lab6-pv-claim-a is stuck in pending.
 Cannot bind to requested volume "lab6-pv-volume-a": storageClassName does not match
 ```
 ##### Solution
-The solution to this delema is adding `storageClassName: manual` to both the `PV` and `PVC` along with having the `volumeName` in the `PVC`
+The solution to this dilemma is adding `storageClassName: manual` to both the `PV` and `PVC` along with having the `volumeName` in the `PVC`
 
 > Setting `storageClassName: ""` also works 
 
