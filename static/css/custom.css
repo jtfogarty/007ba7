@@ -7,7 +7,7 @@ footer .navbar-brand {
 	display: none !important;
 }
 
-#navigation, .pagination {
+#navigation, .pagination, .navbar-toggler {
 	display: none !important;
 }
 
