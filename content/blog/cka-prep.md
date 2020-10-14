@@ -1,5 +1,5 @@
 ---
-title: "CKA Prep"
+title: "Understanding Kubernetes Storage"
 date: 2020-10-10T11:11:11+11:11
 author: Jeff Fogarty
 tags: ["homelab","home","lab","Certified Kubernetes Administrator","Kubernetes Storage"]
@@ -8,9 +8,11 @@ draft: false
 type: "blog"
 weight: 2
 ---
-<div style="font-size: 12px; text-align: right !important"; >Updated 2020-10-10 </div><p>
+<div style="font-size: 12px; text-align: right !important"; >Updated 2020-10-14 </div><p>
 
 #### Understanding Kubernetes Storage
+
+[TL;DR](./#solution)
 
 During my preparation for the Certified Kubernetes Administrator (CKA) exam, I went about creating the below PV and PVC followed by a pod to use this storage.  
 
@@ -27,7 +29,7 @@ My expectation was to find a PVC connected to a PV but when I executed `kubectl 
 The PVC did not use the newly create PV `lab6-pv-volume` but created a new PV using the default storage class `managed-nfs-storage`. 
 Noticing that I created the PV with 2Gi but defined the PVC as 1Gi, I thought I would try a simple solution of creating another PVC with 2Gi but this did not change anything as can be seen below;
 
-> This default storage class was created from this [HowTo](../../howto/nfs-storage)
+> The `managed-nfs-storage` default storage class was created from this [HowTo](../../howto/nfs-storage)
 
 {{< gist jtfogarty 1725f639b806c3efb04be6ec18fc99c5 "kubectl get pv,pvc-a">}}
 
@@ -58,5 +60,13 @@ PVC lab6-pv-claim-a is stuck in pending.
 ```
 Cannot bind to requested volume "lab6-pv-volume-a": storageClassName does not match
 ```
+##### Solution
+The solution to this delema is adding `storageClassName: manual` to both the `PV` and `PVC` along with having the `volumeName` in the `PVC`
 
-I need to do more research
+> Setting `storageClassName: ""` also works 
+
+{{< gist jtfogarty 1725f639b806c3efb04be6ec18fc99c5 "lab6-pv-b.yaml">}}
+
+{{< gist jtfogarty 1725f639b806c3efb04be6ec18fc99c5 "lab6-pvc-b.yaml">}}
+
+{{< gist jtfogarty 1725f639b806c3efb04be6ec18fc99c5 "kubectl get pv,pvc-d">}}
