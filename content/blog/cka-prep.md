@@ -70,3 +70,5 @@ The solution to this dilemma is adding `storageClassName: manual` to both the `P
 {{< gist jtfogarty 1725f639b806c3efb04be6ec18fc99c5 "lab6-pvc-b.yaml">}}
 
 {{< gist jtfogarty 1725f639b806c3efb04be6ec18fc99c5 "kubectl get pv,pvc-d">}}
+
+Leaving the `storageClassName` and `volumeName` out of the `PV PVC` yaml file only works if there is no default storage class.
