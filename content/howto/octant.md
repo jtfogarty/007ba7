@@ -30,7 +30,7 @@ The usage when building a docker image is `docker build [OPTIONS] PATH | URL | -
 
 ```
 cd ./octant/octant-df
-sudo docker build -f 10.10.100.14:5000/octant:1.0 .
+sudo docker build -t 10.10.100.14:5000/octant:1.0 .
 ```
 
 ```
@@ -39,7 +39,8 @@ sudo docker push 10.10.100.14:5000/octant:1.0
 
 We need a configmap so Octant can access the cluster.
 ```
-kubectl create configmap octant-config --from-file ~/.kube/config
+kubectl create ns octant
+kubectl create configmap octant-config --from-file ~/.kube/config -ns octant
 ```
 
 Create the deployment yaml file as below;
@@ -49,5 +50,5 @@ Create the deployment yaml file as below;
 
 Run the below;
 ```
-kubectl create -f octant-deploy.yaml
+kubectl create -f octant-deploy.yaml -n octant
 ```
