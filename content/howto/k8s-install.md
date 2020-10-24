@@ -30,6 +30,8 @@ Key items to look at are;
 
 {{< gist jtfogarty d748e6ecc195045d9a8b9dc6dc37fbe9 "master.sh">}}
 
+#### Worker Node Installation
+
 Key items to look at are;
 
 - [ ] Line 45 - this allows Docker to pull from an unsecure local repository.  If you do not have one, you can delete this line along with the `,` at the end of line 44
@@ -38,4 +40,34 @@ Key items to look at are;
 
 {{< gist jtfogarty d748e6ecc195045d9a8b9dc6dc37fbe9 "worker.sh">}}
 
+#### Network Setup
+
+The last piece of the puzzel for a function cluster is networking.  Below are the commands for installing Calico;
+
+```
+kubectl create -f https://docs.projectcalico.org/manifests/tigera-operator.yaml
+wget https://docs.projectcalico.org/manifests/custom-resources.yaml 
+vi custom-resources.yaml
+kubectl create -f ./k8s/install/custom-resources.yaml
+```
+In the `kubeadm init` command we specified the pod network CIDR to be `--pod-network-cidr=10.41.0.0/16` so when setting up Calico, we need to specify the same CIDR as below;
+
+```
+    ipPools:
+    - blockSize: 26
+      cidr: 10.41.0.0/16
+      encapsulation: VXLANCrossSubnet
+      natOutgoing: Enabled
+      nodeSelector: all()
+```
+
+Calico can be installed right after the master completes 
+
+#### Helpful commands
+
+`kubectl get nodes -w` - returns all nodes in the cluster and let you know if the are ready.  They will remain in the `note-ready` state until Calico installed completely.  The -w is a wait flag that will continually echo the status of the nodes
+
+`kubectl get po -A -w` - returns all `pods` from all `namespaces` and waits
+
+Type `control-c` to exit the wait
 
