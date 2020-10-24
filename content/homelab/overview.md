@@ -8,7 +8,7 @@ draft: false
 type: "post"
 weight: 1
 ---
-<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-25 </div><p>
+<div style="font-size: 12px; text-align: right !important"; >Updated 2020-10-24 </div><p>
 
 ![image](../../img/lab/gallery/IMG_5847.jpg?width=500px)
 
@@ -49,3 +49,17 @@ There is stack of Raspberry Pi's sitting on top of the NAS.  I was hoping to ins
 I'll have to buy one more [Gigabyte GB-BLCE-4105](https://www.amazon.com/gp/product/B07DMM7Z7N/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 
 The keyboad is a [Das Keyboard 4](https://www.amazon.com/stores/Das+Keyboard/page/DF548711-D8BE-4659-83AE-A5FAFF411E10?ref_=ast_bln)
+
+#### Environments
+
+###### Jenkins-x 3 Testing<br>
+1 Master - GB-BSi5-6200<br>
+2 Workers - GB-BLCE-4105<br>
+
+###### Development<br>
+1 Master - GB-BLCE-4105<br>
+2 Workers - 1 NUC10i7FNH and a former gamming machine, defined above<br>
+
+###### Production<br>
+1 Master - GB-BLCE-4105<br>
+3 Workers - NUC10i7FNH<br>

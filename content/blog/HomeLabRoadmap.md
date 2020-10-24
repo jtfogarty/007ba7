@@ -8,7 +8,7 @@ draft: false
 type: "blog"
 weight: 1
 ---
-<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-21 </div><p>
+<div style="font-size: 12px; text-align: right !important"; >Updated 2020-10-24 </div><p>
 
 #### Big Picture
 The purpose of this HomeLab is for learning and there is so much to learn in today's software development landscape.  A firm knowledge of Networking, Kubernetes and all of the flavors of the Software development lifecycle are needed.
@@ -30,6 +30,7 @@ Stay tuned...
 
 #### Timeline
 <div style="font-size: 14px">
+October 2020    - Bought one more NUC to add a 3rd cluster. <a href="../../homelab/overview#environments">details</a><br>
 September 2020  - Installed single master Production Kubernetes cluster. <br>
 August 2020     - Ordered QNAP NAS and Started Configuring Kubernetes Development cluster.<br>
 July 2020       - Ordered CAT 6A 10G Shielded and wired house.<br>
