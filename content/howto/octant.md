@@ -8,11 +8,11 @@ description: "Installing Octant on the cluster"
 type: "howto"
 weight: 6
 ---
-<div style="font-size: 12px; text-align: right !important"; >Updated 2020-09-22 </div><p>
+<div style="font-size: 12px; text-align: right !important"; >Updated 2020-10-25 </div><p>
 
 > Providing access to modify your k8s cluster without proper controls is a security risk, duh.
 
-The below is the tl;dr of [David Adams article](https://medium.com/swlh/running-octant-as-a-container-on-vsphere-with-kubernetes-7845a34584fc)
+The below is the tl;dr of [David Adams' article](https://medium.com/swlh/running-octant-as-a-container-on-vsphere-with-kubernetes-7845a34584fc)
 
 Create a folder called `octant` and a subfolder called `octant-df`. 
 
@@ -20,11 +20,10 @@ Create a folder called `octant` and a subfolder called `octant-df`.
 mkdir -p ./octant/octant-df
 ```
 
-In the `octant-df` folder, create the below [Dockerfile]()
+In the `octant-df` folder, create the below [Dockerfile]() 
 
 {{< gist jtfogarty 463f8977153da0e7ce1f184523881caf "Dockerfile">}}
-
-Get the latest Octant binary from [here](https://github.com/vmware-tanzu/octant/releases), extract and place the binary in `./octant/octant-df/`
+> I'm also including the [Jenkins-x 3 plugin for Octant](https://github.com/jenkins-x/octant-jx/releases/)
 
 The usage when building a docker image is `docker build [OPTIONS] PATH | URL | -` .  If I wanted to push to my Docker Hub repo I would use `docker build -t 007ba7/myImage .` In this case, it is the local repository server running at `10.10.100.14:5000`
 
