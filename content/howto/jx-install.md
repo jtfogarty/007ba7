@@ -70,8 +70,8 @@ Lines 9 - 14 are [steps](https://jenkins-x.io/docs/v3/guides/health/) needed to 
 Line 15 is important because it pushes these changes to the jtf-ops git repo.
 > If you are pushing to GitHub for the first time on your master k8s server, you will need to configure git to use an `ssh` key.  There are a bunch of videos and references on how to do this. Here is a link to the [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) <b>THIS IS NOT REQUIRED FOR JENKINS-X.</b>  It is just nice to have.
 
-Line 16 executes the process to install `jx` .  This process clones jtf-ops into a container in the 'jx boot' or 'jx install` pods and installs base off the clone.  Pushing change into your git repo is required in order to see the expected results. 
-> When  `jx admin operator` is executed, you need to enter the user name, in this case `jtf-ops` and then the generated token. I'm not sure this is needed each time or only the first time.
+Line 16 executes the process to install `jx` .  `jx admin operator` installs the git operator which polls the git repo and creates a Job per commit to clone git and run the install/upgrade. 
+> When  `jx admin operator` is executed, you need to enter the user name, in this case `jtf-ops` is the user name and then the generated token. 
 
 After this process finishes successfully, I changed the `webhook` as detailed above.  
 
