@@ -17,7 +17,7 @@ The prerequisites to installing Jenkins-x 3 in an On-Prem (HomeLab) environment 
 1. [k8s and networking](../k8s-install)
 2. [MetalLB](../metallb)
 3. [Default Storage Class](../nfs-storage)
-4. [Octant](../octant)
+4. [Octant](../octant) (not required, just nice to have)
 
 After the above are functioning, Jenkins-x 3 can be installed.  Below is the TL:DR for installing;
 
@@ -49,7 +49,7 @@ This will allow `hook-jx.jx.docure.ai` to find it's destination.
 
 > I tested setting `tls: enabled: true` but this does not support `ssl offloading` out of the box so I leave it off.  The result is that the `webhook` fails the first time it fires.  Simply changing the `webhook` to `https` and selecting `redelivery` fixes the issue;
 
-![image](../../img/lab/jx/webhook.png)
+![image](../../img/lab/jx/webhook.png?width=500px)
 
 Lines 9 - 14 are [steps](https://jenkins-x.io/docs/v3/guides/health/) needed to install [KuberHealthy](https://github.com/Comcast/kuberhealthy).  Since this is a new install, it is not clear to me if lines 9 & 10 are needed but lines 10 - 14 are needed.  The results of these commands (10 - 14) are that the `helmfile.yaml` is updated in the `repositories:` and `releases:` sections as seen below respectively. 
 
@@ -68,15 +68,20 @@ Lines 9 - 14 are [steps](https://jenkins-x.io/docs/v3/guides/health/) needed to 
 ```
 
 Line 15 is important because it pushes these changes to the jtf-ops git repo.
-> If you are pushing to GitHub for the first time on your master k8s server, you will need to configure git to use an `ssh` key.  There are a bunch of videos and references on how to do this. Here is a link to the [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) <b>THIS IS NOT REQUIRED FOR JENKINS-X.</b>  It is just nice to have.
+> If you are pushing to GitHub for the first time on your master k8s server, you will need to configure git to use an `ssh` key.  There are a bunch of videos and references on how to do this. Here is a link to the [GitHub Docs](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/connecting-to-github-with-ssh) <b>AN SSH KEY IS NOT REQUIRED FOR JENKINS-X.</b>  It is just nice to have.
 
-Line 16 executes the process to install `jx` .  `jx admin operator` installs the git operator which polls the git repo and creates a Job per commit to clone git and run the install/upgrade. 
+Line 16 executes the process to install Jenkins-x .  `jx admin operator` installs the git operator which pulls the git repo and creates a Job per commit to clone git and run the install/upgrade. For more details checkout [How it works](https://jenkins-x.io/docs/v3/about/how-it-works/)
 > When  `jx admin operator` is executed, you need to enter the user name, in this case `jtf-ops` is the user name and then the generated token. 
 
-After this process finishes successfully, I changed the `webhook` as detailed above.  
+After this process finishes successfully, I changed the `webhook` to use `https` as detailed above.  
 
 The `jx admin operator` made changes to the cloned `jtf-ops` repository and pushed back to GitHub. To get all of these changes on my local clone, I executed `git pull`
 
 Executing `jx health get status --all-namespaces --watch` will eventually display the below.
 
-![image](../../img/lab/jx/kuberhealthy.png)
+![image](../../img/lab/jx/kuberhealthy.png)<br>
+
+##### Octant with the jx plugins
+
+Below is an image of the Health checks for Jenkins-x installed into Octant
+![image](../../img/lab/jx/octant-plugins.png?width=500px)
