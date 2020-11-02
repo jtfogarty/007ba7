@@ -51,7 +51,7 @@ This will allow `hook-jx.jx.docure.ai` to find it's destination.
 
 ![image](../../img/lab/jx/webhook.png?width=500px)
 
-Lines 9 - 14 are [steps](https://jenkins-x.io/docs/v3/guides/health/) needed to install [KuberHealthy](https://github.com/Comcast/kuberhealthy).  Since this is a new install, it is not clear to me if lines 9 & 10 are needed but lines 10 - 14 are needed.  The results of these commands (10 - 14) are that the `helmfile.yaml` is updated in the `repositories:` and `releases:` sections as seen below respectively. 
+Lines 9 - 14 are [steps](https://jenkins-x.io/docs/v3/guides/health/) needed to install [KuberHealthy](https://github.com/Comcast/kuberhealthy).  Since this is a new install, lines 9 & 10 are not needed but lines 11 - 14 are needed.  The results of these commands (10 - 14) are that the `helmfile.yaml` is updated in the `repositories:` and `releases:` sections as seen below respectively. 
 
 ```
 - name: kuberhealthy
