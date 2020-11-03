@@ -47,11 +47,11 @@ ingress:
 ```
 This will allow `hook-jx.jx.docure.ai` to find it's destination.
 
-> I tested setting `tls: enabled: true` but this does not support `ssl offloading` out of the box so I leave it off.  The result is that the `webhook` fails the first time it fires.  Simply changing the `webhook` to `https` and selecting `redelivery` fixes the issue;
+> I tested setting `tls: enabled: true` but this does not support `ssl offloading` out of the box so I left it off.  The result is that the `webhook` fails the first time it fires.  Simply changing the `webhook` to `https` and selecting `redelivery` fixes the issue;
 
 ![image](../../img/lab/jx/webhook.png?width=500px)
 
-Lines 9 - 14 are [steps](https://jenkins-x.io/docs/v3/guides/health/) needed to install [KuberHealthy](https://github.com/Comcast/kuberhealthy).  Since this is a new install, lines 9 & 10 are not needed but lines 11 - 14 are needed.  The results of these commands (10 - 14) are that the `helmfile.yaml` is updated in the `repositories:` and `releases:` sections as seen below respectively. 
+Lines 9 - 14 are [steps](https://jenkins-x.io/docs/v3/guides/health/) needed to install [KuberHealthy](https://github.com/Comcast/kuberhealthy).  Since this is a new install, lines 9 & 10 are not needed but lines 11 - 14 are needed.  The results of these commands (11 - 14) are that the `helmfile.yaml` is updated in the `repositories:` and `releases:` sections as seen below respectively. 
 
 ```
 - name: kuberhealthy
@@ -84,4 +84,5 @@ Executing `jx health get status --all-namespaces --watch` will eventually displa
 ##### Octant with the jx plugins
 
 Below is an image of the Health checks for Jenkins-x installed into Octant
+
 ![image](../../img/lab/jx/octant-plugins.png?width=500px)
