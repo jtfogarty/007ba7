@@ -39,7 +39,7 @@ sudo docker push 10.10.100.14:5000/octant:1.0
 We need a configmap so Octant can access the cluster.
 ```
 kubectl create ns octant
-kubectl create configmap octant-config --from-file ~/.kube/config -ns octant
+kubectl create configmap octant-config --from-file ~/.kube/config -n octant
 ```
 
 Create the deployment yaml file as below;
