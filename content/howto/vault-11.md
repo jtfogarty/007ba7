@@ -6,7 +6,7 @@ tags: ["home lab", "vault","kubernetes"]
 draft: false
 description: "Vault in a Home Lab"
 type: "howto"
-weight: 5
+weight: 11
 ---
 <div style="font-size: 12px; text-align: right !important"; >Updated 2021-03-04 </div><p>
 
@@ -25,6 +25,8 @@ To get the latest Vault Helm chart, execute the below;
 ```
 helm repo add hashicorp https://helm.releases.hashicorp.com
 helm pull hashicorp/vault
+tar -xzvf vault-0.9.1.tgz
+cd vault
 ```
 ##### values.yaml
 
