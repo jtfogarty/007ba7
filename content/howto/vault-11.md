@@ -8,18 +8,14 @@ description: "Vault in a Home Lab"
 type: "howto"
 weight: 11
 ---
-<div style="font-size: 12px; text-align: right !important"; >Updated 2021-03-04 </div><p>
+<div style="font-size: 12px; text-align: right !important"; >Updated 2021-03-08 </div><p>
 
-The goal of this example is to detail how to setup Vault via Helm using TLS along with the vault agent injector.  
+The goal of this example is to detail the setup of Vault/Vault Agent Injector via Helm using TLS.
 
 The below image details the install process.  
 ![image](../../img/lab/vault/flow.png)
 
 > Modifying the values chart is not shown in the above process flow
-
-#### github repo
-The github repo for this example is [here](https://github.com/jtfogarty/k8s-journal/blob/master/vault-install)
-
 #### Helm Chart
 To get the latest Vault Helm chart, execute the below;
 ```
@@ -28,6 +24,17 @@ helm pull hashicorp/vault
 tar -xzvf vault-0.9.1.tgz
 cd vault
 ```
+
+> In the below example and in my repo, the helm chart for vault is in the `vault-helm` directory <br>
+> The directory structure is <br>
+>   vault-install  <br>
+    ├── install.sh <br>
+    ├── setup-v1-injector.sh <br>
+    ├── setup-v1.sh <br>
+    └── vault-helm
+#### github repo
+The github repo for this example is [here](https://github.com/jtfogarty/k8s-journal/blob/master/vault-install)
+
 ##### values.yaml
 
 Below lists the changes;
